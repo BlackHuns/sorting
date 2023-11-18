@@ -1,0 +1,2 @@
+# sorting
+küçükten büyüğe sıralama
