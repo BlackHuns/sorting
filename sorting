@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class sorting {
+    public static void main (String[] args){
+        System.out.println("3 sayıyı kıyaslama programına hoi geldiniz");
+
+        int a, b, c;
+
+        Scanner tara = new Scanner(System.in);
+
+        System.out.print("ilk sayıyı giriniz:");
+
+        a = tara.nextInt();
+
+        System.out.print("ikinci sayıyı giriniz:");
+
+        b = tara.nextInt();
+
+        System.out.print("üçüncü sayıyı girniz:");
+
+        c = tara.nextInt();
+
+        System.out.println("sayılıarın sıralaması:");
+
+        if( a<b && a<c ){
+            if (b<c){
+                System.out.println(a + "<" + b+ "<" + c);
+            } else {
+                System.out.println(a + "<" + c + "<" + b );
+            }
+        }
+        if (b<a && b<c){
+            if(a<c){
+                System.out.println(b + "<" + a + "<" + c);
+            } else {
+                System.out.println(b + "<" + c + "<" + a);
+            }
+        } if(c<a && c<b) {
+            if(b<a){
+                System.out.println(c + "<" + b + "<" + a);
+            } else {
+                System.out.println(c + "<" + a + "<" + b);
+            }
+        }
+
+    }
+}
